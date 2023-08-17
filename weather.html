@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main" class="flex">
+      <div id="card">
+        <div id="search" class="flex">
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Enter City Name"
+          />
+          <div id="searchIcon" class="flex">
+            <img src="./asset/images/search.png" alt="" />
+          </div>
+        </div>
+
+        <div id="details" class="flex">
+          <div id="divImage" class="flex">
+            <img id="weatherImg" src="" alt="" />
+            <h1 id="cityName"></h1>
+          </div>
+          <div id="weatherDetails" class="flex">
+            <div id="humidity" class="flex">
+              <img id="weatherimage" src="./asset/images/humidity.png" alt="" />
+              <div class="flex" style="flex-direction: column;">
+                <h2 id="humidityPercent"></h2>
+                <h2>Humidity</h2>
+              </div>
+            </div>
+            <div id="windSpeeddiv" class="flex">
+              <img src="./asset/images/wind.png" alt="" />
+              <div class="flex" style="flex-direction: column;">
+                <h2 id="windSpeed"></h2>
+                <h2>Wind Speed</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
